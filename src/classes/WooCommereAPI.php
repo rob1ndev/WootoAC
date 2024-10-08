@@ -9,7 +9,7 @@ class WooCommerceAPI {
     }
 
     public function get_orders() {
-        $url = 'https://YOUR_WOOCOMMERCE_SITE/wp-json/wc/v3/orders';
+        $url = 'https://thelabelshow.nl/wp-json/wc/v3/orders';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
