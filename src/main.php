@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 // Laad de configuratie en de benodigde klassen
 require __DIR__ . '/../config/config.php';
-require 'src/classes/WooCommerceAPI.php';
-require 'src/classes/ActiveCampaignAPI.php';
+require __DIR__ . '/classes/WooCommerceAPI.php';
+require __DIR__ . '/classes/ActiveCampaignAPI.php';
 
 // WooCommerce API ophalen (gebruik de gedefinieerde constanten uit config.php)
 $wc_api = new WooCommerceAPI(WC_CONSUMER_KEY, WC_CONSUMER_SECRET);
